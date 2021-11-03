@@ -11,3 +11,5 @@ data class ApiResponse<out T>(val type: ApiResponseType, val data: T?, val messa
 enum class ApiResponseType {
     LOADING, ERROR, SUCCESS
 }
+
+

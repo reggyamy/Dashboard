@@ -16,8 +16,10 @@
         android:layout_margin="10dp">
 
         <ImageView
+            android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:scaleType="fitXY"
             tools:src="@tools:sample/avatars"/>
 
     </androidx.cardview.widget.CardView>
@@ -36,6 +38,7 @@
         tools:ignore="RtlCompat" />
 
     <TextView
+        android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:maxLines="3"

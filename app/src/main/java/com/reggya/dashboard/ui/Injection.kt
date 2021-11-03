@@ -12,7 +12,7 @@ object Injection {
     private fun provideRepository():IRepository{
         val remoteData = RemoteDataSource.getInstance(ApiConfig.provideApiServiceData())
         val remoteNews = RemoteDataSource.getInstance(ApiConfig.provideApiServiceNews())
-        return Repository.getInstance(remoteData, remoteNews)
+        return Repository.getInstance(remoteNews, remoteData)
     }
 
     fun provideUseCase(
