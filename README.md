@@ -51,10 +51,7 @@ Library in use
         alt="Detail Screen 2"    
         style="margin-right: 10px;"    
         width="200" />
-    <img src="assets/no_connection.jpeg"
-        alt="Detail Location"    
-        style="margin-right: 10px;"    
-        width="200" />
+
 </p>
 
 
