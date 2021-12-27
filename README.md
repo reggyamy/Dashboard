@@ -19,7 +19,15 @@ Library in use
         alt="Splashscreen"    
         style="margin-right: 10px;"    
         width="200" />
+    <img src="assets/no_connection.jpeg"
+        alt="Detail Location"    
+        style="margin-right: 10px;"    
+        width="200" />
     <img src="assets/home.jpeg"
+        alt="Detail Location"    
+        style="margin-right: 10px;"    
+        width="200" />    
+    <img src="assets/detail_news.jpeg"
         alt="Home Search Image"    
         style="margin-right: 10px;"    
         width="200" />
@@ -35,10 +43,6 @@ Library in use
         alt="Home Search Error"    
         style="margin-right: 10px;"
         width="200" />
-</p>
-
-<h3 align="center">  </h3>
-<p align="center">
     <img src="assets/aduan.jpeg"
         alt="Detail Screen 1"    
         style="margin-right: 10px;"    
