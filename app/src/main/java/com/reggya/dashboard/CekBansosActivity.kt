@@ -25,11 +25,6 @@ class CekBansosActivity : AppCompatActivity() {
         binding.kecamatan.adapter = adapter(category[2])
         binding.desa.adapter = adapter(category[3])
 
-        binding.cekBansos.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(BuildConfig.BANSOS_URL))
-            startActivity(intent)
-        }
-
         Toast.makeText(this, "coming soon", Toast.LENGTH_SHORT).show()
 
     }
