@@ -23,10 +23,10 @@ Library in use
         alt="Home Search Image"    
         style="margin-right: 10px;"    
         width="200" />
-    <img src="assets/home-search-query.png"
+    <img src="assets/chart.jpeg"
         alt="Home Search Text"    
         style="margin-right: 10px;"    
-        width="200" />
+        width="300" />
     <img src="assets/home-search-empty.png"
             alt="Home Search Empty"    
             style="margin-right: 10px;"
