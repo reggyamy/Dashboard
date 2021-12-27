@@ -13,7 +13,7 @@ Library in use
 - Lottie
 - Glide
 
-<h3 align="center"> Home Screen </h3>
+<h3 align="center"> Demo App </h3>
 <p align="center">
 <img src="assets/splash_screen.jpeg"
         alt="Splashscreen"    
