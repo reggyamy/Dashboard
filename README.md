@@ -15,7 +15,7 @@ Library in use
 
 <h3 align="center"> Home Screen </h3>
 <p align="center">
-<img src="assets/splashscreen.png"
+<img src="assets/splash_screen.png"
         alt="Splashscreen"    
         style="margin-right: 10px;"    
         width="200" />
