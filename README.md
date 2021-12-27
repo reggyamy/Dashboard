@@ -19,7 +19,7 @@ Library in use
         alt="Splashscreen"    
         style="margin-right: 10px;"    
         width="200" />
-    <img src="assets/home-search-image.png"
+    <img src="assets/home.jpeg"
         alt="Home Search Image"    
         style="margin-right: 10px;"    
         width="200" />
@@ -37,7 +37,7 @@ Library in use
         width="200" />
 </p>
 
-<h3 align="center"> Detail Screen </h3>
+<h3 align="center">  </h3>
 <p align="center">
     <img src="assets/detail-main.png"
         alt="Detail Screen 1"    
