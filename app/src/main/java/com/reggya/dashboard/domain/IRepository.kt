@@ -1,17 +1,14 @@
 package com.reggya.dashboard.domain
 
-import com.reggya.dashboard.CovidResponseItem
 import com.reggya.dashboard.data.ApiResponse
-import com.reggya.dashboard.data.ArticlesItem
 import com.reggya.dashboard.data.BeritaItem
-import com.reggya.dashboard.data.XMLBerita
+import com.reggya.dashboard.data.model.DataItem
+import io.reactivex.rxjava3.annotations.NonNull
 import io.reactivex.rxjava3.core.Flowable
 
 interface IRepository {
 
-//    fun getData(): Flowable<ApiResponse<List<CovidResponseItem>>>
+    fun getData(year: String): @NonNull Flowable<ApiResponse<List<DataItem?>?>>
     fun getNews(): Flowable<ApiResponse<List<BeritaItem?>?>>
-
-//    fun getNews(): Flowable<ApiResponse<List<BeritaItem?>?>>
 
 }

@@ -1,5 +1,7 @@
 package com.reggya.dashboard.data
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 import org.simpleframework.xml.Element
 import org.simpleframework.xml.ElementList
 import org.simpleframework.xml.Root
@@ -10,20 +12,19 @@ data class XMLBerita @JvmOverloads constructor(
 
     var version: String? = null,
 
-    @field: ElementList(name = "get5BeritaFoto", inline = true, required = false)
-    var get5BeritaFoto: Get5BeritaFoto? = null
+    @field: ElementList(name = "getBeritaPerHalaman", inline = true, required = false)
+    var getBeritaPerHalaman: GetBeritaPerHalaman? = null
 
 )
 
-@Root(name = "get5BeritaFoto", strict = false)
-data class Get5BeritaFoto (
-    @field: ElementList(name = "response", inline = true, required = false)
+@Root(name = "getBeritaPerHalaman", strict = false)
+data class GetBeritaPerHalaman (
+    @field: ElementList(name = "response", inline = true, required = false, empty = true)
     var response: List<BeritaItem>? = null,
 
-    @Element(name = "status")
-    var status: String? = null
 )
 
+@Parcelize
 @Root(name = "berita", strict = false)
 data class BeritaItem @JvmOverloads constructor(
     @field: Element(name = "tanggal")
@@ -32,13 +33,10 @@ data class BeritaItem @JvmOverloads constructor(
     @field: Element(name = "kategori")
     var kategori: String? = null,
 
-    @field: Element(name = "gambar")
-    var gambar: String? = null,
-
     @field: Element(name = "title")
     var title: String? = null,
 
     @field: Element(name = "isi")
     var isi: String? = null
 
-)
+):Parcelable

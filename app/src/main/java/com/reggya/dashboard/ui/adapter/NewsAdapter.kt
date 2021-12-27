@@ -1,18 +1,25 @@
 package com.reggya.dashboard.ui.adapter
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.reggya.dashboard.data.ModelBeritaItem
+import com.bumptech.glide.Glide
+import com.reggya.dashboard.BuildConfig
+import com.reggya.dashboard.DetailNews
+import com.reggya.dashboard.R
+import com.reggya.dashboard.data.BeritaItem
+import com.reggya.dashboard.data.HTMLHelper
 import com.reggya.dashboard.databinding.ContentNewsBinding
+
 
 class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
 
-    private var news = ArrayList<ModelBeritaItem?>()
+    private var news = ArrayList<BeritaItem?>()
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setData(newData: List<ModelBeritaItem?>?){
+    fun setData(newData: List<BeritaItem?>?){
         if(newData == null) return
             news.clear()
             news.addAll(newData)
@@ -33,21 +40,27 @@ class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
     override fun getItemCount(): Int = news.size
 
     class ViewHolder(private val binding: ContentNewsBinding): RecyclerView.ViewHolder(binding.root) {
-        fun bind(data: ModelBeritaItem?) {
+        fun bind(data: BeritaItem?) {
 
-            binding.title.text = data?.title.toString()
-//            binding.content.text = data?.description
-//            Glide.with(itemView)
-//                .load(data?.urlToImage)
-//                .into(binding.image)
+            binding.title.text = data?.title
 
-//            itemView.setOnClickListener {
-//                val intent = Intent(itemView.context, DetailNews::class.java)
-//                intent.putExtra(DetailNews.DATA, data?.url)
-//                itemView.context.startActivity(intent)
-//            }
+            Glide.with(itemView)
+                .load(HTMLHelper.getString(data?.isi)[0])
+                .placeholder(R.drawable.ic_no_image)
+                .error(R.drawable.ic_no_image)
+                .into(binding.image)
+
+            itemView.setOnClickListener {
+                val intent = Intent(itemView.context, DetailNews::class.java)
+                intent.putExtra(DetailNews.DATA, data)
+                itemView.context.startActivity(intent)
+            }
+
         }
 
     }
 
 }
+
+
+

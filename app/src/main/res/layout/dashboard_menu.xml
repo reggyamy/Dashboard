@@ -5,85 +5,111 @@
     android:layout_height="wrap_content"
     android:paddingTop="10dp"
     android:layout_gravity="center_horizontal"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="RtlSymmetry">
 
-    <androidx.cardview.widget.CardView
+    <ImageButton
         android:id="@+id/menu1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="20dp"
-        android:backgroundTint="@color/baby_blue"
-        app:cardCornerRadius="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@drawable/bg_menu"
+        android:src="@drawable/menu1"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
-            android:src="@drawable/menu1" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
+    <ImageButton
         android:id="@+id/menu2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="15dp"
-        android:layout_marginHorizontal="35dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        android:background="@drawable/bg_menu"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toEndOf="@+id/menu1"
-        tools:ignore="MissingConstraints">
+        android:src="@drawable/menu2"
+        tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/blue" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
+    <ImageButton
         android:id="@+id/menu3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="35dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/menu4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/bg_menu"
+        android:layout_gravity="center"
+        android:src="@drawable/menu3"
         app:layout_constraintStart_toEndOf="@id/menu2"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/blue" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
+    <ImageButton
         android:id="@+id/menu4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="20dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/blue" />
-
-    </androidx.cardview.widget.CardView>
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/menu4"
+        android:background="@drawable/bg_menu"
+        app:layout_constraintStart_toEndOf="@+id/menu3"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:layout_width="60dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Statistik"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_regular"
         android:gravity="center"
+        android:text="@string/pengaduan"
+        android:textColor="@color/grey"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/menu3"
+        app:layout_constraintStart_toStartOf="@+id/menu3"
+        app:layout_constraintTop_toBottomOf="@+id/menu3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cek_bansos"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/menu2"
+        app:layout_constraintStart_toStartOf="@+id/menu2"
+        app:layout_constraintTop_toBottomOf="@+id/menu2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/grey"
         app:layout_constraintEnd_toEndOf="@+id/menu1"
         app:layout_constraintStart_toStartOf="@+id/menu1"
         app:layout_constraintTop_toBottomOf="@+id/menu1"
         tools:ignore="MissingConstraints" />
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_pengaduan"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="@+id/menu4"
+        app:layout_constraintStart_toStartOf="@+id/menu4"
+        app:layout_constraintTop_toBottomOf="@+id/menu4"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

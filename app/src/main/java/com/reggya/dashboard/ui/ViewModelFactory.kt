@@ -3,6 +3,7 @@ package com.reggya.dashboard.ui
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.reggya.dashboard.domain.Injection
 import com.reggya.dashboard.domain.UseCase
 
 class ViewModelFactory private constructor(
@@ -23,7 +24,7 @@ class ViewModelFactory private constructor(
 
         fun getInstance(context: Context): ViewModelFactory =
             instance ?: synchronized(this){
-                instance ?: ViewModelFactory(Injection.provideUseCase(context))
+                instance ?: ViewModelFactory(Injection.provideUseCase())
             }
     }
 }

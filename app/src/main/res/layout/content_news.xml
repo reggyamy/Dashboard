@@ -1,53 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="300dp"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginTop="10dp"
-    app:cardCornerRadius="15dp"
-    android:background="@color/white">
+    app:cardCornerRadius="20dp"
+    app:cardElevation="7dp"
+    android:layout_margin="16dp"
+    android:backgroundTint="@color/white"
+    tools:ignore="UnusedAttribute">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="10dp">
-
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            tools:src="@tools:sample/avatars"/>
-
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        tools:src="@tools:sample/avatars"/>
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:maxLines="2"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="120dp"
-        android:textStyle="bold"
-        android:textColor="@color/blue"
-        tools:text="@tools:sample/lorem/random"
-        tools:ignore="RtlCompat" />
-
-    <TextView
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="63dp"
         android:maxLines="3"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="12sp"
         android:layout_marginBottom="10dp"
-        android:layout_marginStart="120dp"
+        android:fontFamily="@font/poppins_medium"
         android:textColor="@color/dark_blue"
         tools:text="@tools:sample/lorem/random"
         tools:ignore="RtlCompat" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/date"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="85dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:textColor="@color/grey"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:textSize="14sp"-->
+<!--        tools:ignore="RtlCompat"-->
+<!--        tools:text="@tools:sample/lorem" />-->
 
 </androidx.cardview.widget.CardView>

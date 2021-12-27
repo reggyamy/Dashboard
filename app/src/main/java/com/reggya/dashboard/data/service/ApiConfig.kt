@@ -1,6 +1,5 @@
-package com.reggya.dashboard.data
+package com.reggya.dashboard.data.service
 
-import com.google.gson.GsonBuilder
 import com.reggya.dashboard.BuildConfig.BASE_URL
 import com.reggya.dashboard.BuildConfig.NEWS_URL
 import okhttp3.OkHttpClient
@@ -14,7 +13,7 @@ import java.util.concurrent.TimeUnit
 
 object ApiConfig {
 
-    fun provideApiServiceData(): ApiService{
+    fun provideApiServiceData(): ApiService {
         fun provideOkHttpClient(): OkHttpClient{
             return OkHttpClient.Builder()
                 .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
@@ -32,7 +31,7 @@ object ApiConfig {
         return retrofit.create(ApiService::class.java)
     }
 
-    fun provideApiServiceNews(): ApiService{
+    fun provideApiServiceNews(): ApiService {
         fun provideOkHttpClient(): OkHttpClient{
             return OkHttpClient.Builder()
                 .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))

@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.reggya.dashboard">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/satta_bg"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -15,11 +16,23 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".StatusPengaduanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PengaduanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CekBansosActivity"
+            android:exported="true" />
+        <activity
             android:name=".DetailNews"
             android:exported="true" />
-        <activity android:name=".DashboardActivity" /> <!-- <activity -->
-        <!-- android:name=".OnBoardingScreen"/> -->
-        <activity android:name=".MainActivity">
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

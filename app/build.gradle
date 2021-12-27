@@ -19,6 +19,8 @@ android {
         buildConfigField "String", "NEWS_URL", News_URL
         buildConfigField "String", 'BASE_URL', Base_URL
         buildConfigField "String", "API_KEY", Secret_API
+        buildConfigField "String", "BANSOS_URL", Bansos_URL
+        buildConfigField "String", "PENGADUAN_URL", Pengaduan_URL
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -52,6 +54,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'io.reactivex.rxjava3:rxjava:3.1.1'
+    implementation 'org.jsoup:jsoup:1.14.3'
     implementation 'androidx.lifecycle:lifecycle-reactivestreams-ktx:2.4.0-alpha02'
     implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"

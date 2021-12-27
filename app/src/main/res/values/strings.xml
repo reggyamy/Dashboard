@@ -1,15 +1,19 @@
-<resources>
-    <string name="app_name">Dashboard</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_chart">ChartActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SATTA</string>
     <string name="berita">Berita</string>
+    <string name="title_activity_pengaduan_masyarakat">PengaduanMasyarakatActivity</string>
+    <string name="satu_data_dpr_ri">Satta DPR RI</string>
+    <string name="judul_chart1">Jumlah Penduduk Miskin Berdasarkan Provinsi Kategori Per Tahun</string>
+    <string name="persentase_miskin">26.424.020 Jiwa</string>
+    <string name="text2">Jumlah Penduduk Miskin Tahun 2020</string>
+    <string name="persentase_bansos">80.099,99 Milyar</string>
+    <string name="text1">Jumlah Dana Bansos Tahun 2020</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="cek_bansos">Cek Bansos</string>
+    <string name="pengaduan">Pengaduan</string>
+    <string name="penjelasan1">Jumlah penduduk miskin di Indonesia yang diambil berdasarkan Provinsi dari tahun 2011 – 2020.</string>
+    <string name="judul_chart2">Perbandingan Dana Bansos Terhadap Jumlah Penduduk Miskin dan Penganguran di Indonesia</string>
+    <string name="title_pie_chart" tools:ignore="TypographyDashes">Jumlah Dana Bansos Tahun 2011 - 2020</string>
+    <string name="status_pengaduan">Status\nPengaduan</string>
+
 </resources>

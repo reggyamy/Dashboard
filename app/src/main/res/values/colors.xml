@@ -11,11 +11,12 @@
     <color name="teal_900">#007A8d</color>
     <color name="dark_teal">#578289</color>
     <color name="light_primary">#F2F7FF</color>
-    <color name="blue">#435EBE</color>
-    <color name="baby_blue">#5DB1F2</color>
-    <color name="dark_blue">#323f5f</color>
+    <color name="blue">#4684EB</color>
+    <color name="baby_blue">#5998FF</color>
+    <color name="dark_blue">#3469C2</color>
     <color name="black">#FF000000</color>
-    <color name="grey">#3C3B3B</color>
+    <color name="grey">#444444</color>
+    <color name="light_grey">#A3A3A3</color>
     <color name="purple">#410081</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#FFC107</color>
