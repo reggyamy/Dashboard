@@ -1,5 +1,8 @@
 Prototype Dashboard Satu Data 
 ==
+
+You can try this app https://drive.google.com/file/d/1-rLL6-Qt1mW5Yw9KQ9c9sbFKzvbDSJSH/view?usp=sharings        
+
 The Architecture
 --
 - Clean Architecture
