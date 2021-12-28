@@ -1,8 +1,6 @@
 package com.reggya.dashboard.data
 
-import android.os.Parcel
 import android.os.Parcelable
-import android.os.Parcelable.Creator
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 

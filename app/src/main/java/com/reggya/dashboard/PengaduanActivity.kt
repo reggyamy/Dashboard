@@ -1,13 +1,13 @@
 package com.reggya.dashboard
 
-import android.R
 import android.graphics.Color
 import android.os.Bundle
-import android.text.Layout
 import android.view.View
-import android.widget.*
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.load.engine.Resource
 import com.reggya.dashboard.databinding.ActivityPengaduanBinding
 
 

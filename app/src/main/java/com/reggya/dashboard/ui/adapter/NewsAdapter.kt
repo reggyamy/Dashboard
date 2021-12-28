@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.reggya.dashboard.BuildConfig
 import com.reggya.dashboard.DetailNews
 import com.reggya.dashboard.R
 import com.reggya.dashboard.data.BeritaItem

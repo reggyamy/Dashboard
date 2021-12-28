@@ -1,8 +1,8 @@
 package com.reggya.dashboard.domain
 
-import com.reggya.dashboard.data.service.ApiConfig
 import com.reggya.dashboard.data.RemoteDataSource
 import com.reggya.dashboard.data.Repository
+import com.reggya.dashboard.data.service.ApiConfig
 
 object Injection {
 

@@ -2,7 +2,6 @@ package com.reggya.dashboard.data
 
 import com.reggya.dashboard.data.model.DataItem
 import com.reggya.dashboard.domain.IRepository
-import io.reactivex.rxjava3.annotations.NonNull
 import io.reactivex.rxjava3.core.Flowable
 
 class Repository private constructor(

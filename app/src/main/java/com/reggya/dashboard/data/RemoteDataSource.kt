@@ -1,7 +1,6 @@
 package com.reggya.dashboard.data
 
 import android.annotation.SuppressLint
-import android.provider.ContactsContract
 import android.util.Log
 import com.reggya.dashboard.data.model.DataItem
 import com.reggya.dashboard.data.service.ApiService
@@ -11,14 +10,6 @@ import io.reactivex.rxjava3.core.BackpressureStrategy
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import io.reactivex.rxjava3.subjects.PublishSubject
-import retrofit2.converter.gson.GsonConverterFactory
-
-import retrofit2.Retrofit
-
-import okhttp3.OkHttpClient
-
-
-
 
 
 class RemoteDataSource private constructor(private val apiService: ApiService){

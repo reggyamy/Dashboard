@@ -1,29 +1,18 @@
 package com.reggya.dashboard
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
-import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.reggya.dashboard.data.ApiResponseType
-import com.reggya.dashboard.data.BeritaItem
 import com.reggya.dashboard.databinding.ActivityMainBinding
 import com.reggya.dashboard.ui.HomeViewModel
 import com.reggya.dashboard.ui.ViewModelFactory
 import com.reggya.dashboard.ui.adapter.NewsAdapter
-import android.R
-import android.provider.Settings
-
-import android.view.ViewGroup
 import com.reggya.dashboard.utils.ConnectionLiveData
 
 

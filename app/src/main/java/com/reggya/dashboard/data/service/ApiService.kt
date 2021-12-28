@@ -1,7 +1,6 @@
 package com.reggya.dashboard.data.service
 
 import com.reggya.dashboard.data.GetBeritaPerHalaman
-import com.reggya.dashboard.data.model.DataItem
 import com.reggya.dashboard.data.model.KemiskinanResponse
 import io.reactivex.rxjava3.core.Flowable
 import retrofit2.http.GET
