@@ -46,6 +46,9 @@ Library in use
         alt="Home Search Error"    
         style="margin-right: 10px;"
         width="200" />
+</p>
+<p align="center">
+        width="200" />
     <img src="assets/aduan.jpeg"
         alt="Detail Screen 1"    
         style="margin-right: 10px;"    
@@ -54,7 +57,6 @@ Library in use
         alt="Detail Screen 2"    
         style="margin-right: 10px;"    
         width="200" />
-
 </p>
 
 License
