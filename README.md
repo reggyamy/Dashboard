@@ -57,7 +57,7 @@ Library in use
 
 </p>
 
-#License
+License
 --
 ```
 
