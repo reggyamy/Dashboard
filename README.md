@@ -48,7 +48,6 @@ Library in use
         width="200" />
 </p>
 <p align="center">
-        width="200" />
     <img src="assets/aduan.jpeg"
         alt="Detail Screen 1"    
         style="margin-right: 10px;"    
